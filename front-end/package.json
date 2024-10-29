@@ -1,0 +1,20 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "Front-End service for the DOS project",
+  "main": "front-end.js",
+  "scripts": {
+    "start": "node front-end.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "csv-parser": "^3.0.0",
+    "express": "^4.21.1",
+    "front-end": "file:"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

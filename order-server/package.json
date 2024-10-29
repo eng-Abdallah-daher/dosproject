@@ -1,0 +1,21 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "description": "Order service for the DOS project",
+  "main": "order-server.js",
+  "scripts": {
+    "start": "node order-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "express": "^4.21.1",
+    "order-service": "file:"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

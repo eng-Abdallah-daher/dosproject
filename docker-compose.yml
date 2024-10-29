@@ -1,0 +1,23 @@
+# C:\Users\Hp\Desktop\apps\dos\dosproject\docker-compose.yml
+version: '3.8'
+
+services:
+  catalog-server:
+    build:
+      context: ./catalog-server
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./catalog-server/proj.csv:/usr/src/app/proj.csv
+
+  order-server:
+    build:
+      context: ./order-server
+    ports:
+      - "3002:3002"
+
+  front-end:
+    build:
+      context: ./front-end
+    ports:
+      - "3000:3000"
