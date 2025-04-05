@@ -74,3 +74,73 @@ This will start the following services:
 - Catalog Server: Accessible on port 3001
 
 - Order Server: Accessible on port 3002
+
+## API Endpoints
+
+#### Frontend Server:
+
+*   **GET /search/{topic}**: Search books by topic.
+    
+    *   Example: `/search/distributed%20systems`
+        
+*   **GET /info/{item_number}**: Get details about a specific book by item number.
+    
+    *   Example: `/info/2`
+        
+*   **POST /purchase/{item_number}**: Purchase a book by item number and quantity.
+    
+    *   Example: `/purchase/2`
+        
+    *   Request Body: `{ "amount": 1 }`
+        
+
+#### Catalog Server:
+
+*   **GET /search/{topic}**: Get all books by topic (distributed systems, undergraduate school).
+    
+*   **GET /info/{item_number}**: Get book details by item number.
+    
+*   **PUT /update/{item_number}**: Update the stock or price of a book.
+    
+    *   Example: `/update/2`
+        
+
+#### Order Server:
+
+*   **POST /purchase/{item_number}**: Purchase a book by item number.
+    
+    *   Verifies stock and processes the order.
+
+
+## Running the Tests
+
+Tests are not yet implemented for this lab, but the system supports multiple concurrent requests and uses simple persistent storage. You can test the application by sending requests to the APIs listed above.
+
+### Known Issues
+
+*   The application does not currently handle database-level concurrency conflicts, as it relies on simple CSV files for persistence.
+    
+*   Some operations (such as order cancellations or updates to existing orders) are not implemented.
+    
+
+## Future Improvements
+
+*   Integration with a real database (e.g., SQLite) for persistent data storage.
+    
+*   Adding user authentication for purchase and order management.
+    
+*   Extending the catalog to include more books and features.
+    
+
+## Contributing
+
+Feel free to submit issues and pull requests. Contributions are welcome!
+
+
+## Acknowledgements
+
+*   Node.js and Express for backend development.
+    
+*   Docker for containerizing the services.
+    
+*   The academic team for the lab assignment guidance.
