@@ -1,4 +1,4 @@
-# Bazar.com: A Multi-tier Online Book Store (Distributed and Operating Systems - Spring 2019)
+# Bazar.com: A Multi-tier Online Book Store 
 
 ## Description
 
