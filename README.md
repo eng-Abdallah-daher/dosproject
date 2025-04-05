@@ -49,7 +49,7 @@ The system utilizes a client-server model with HTTP REST APIs for communication 
 git clone https://github.com/your-username/bazar-com.git
 cd bazar-com
 ```
-###Install Dependencies
+### 2. Install Dependencies
 ```bash
 cd front-end
 npm install
@@ -61,3 +61,16 @@ cd ../order-server
 npm install
 
 ```
+
+### 3. Docker Setup (Optional)
+```bash
+docker-compose up --build
+```
+
+This will start the following services:
+
+- Frontend: Accessible on port 3000
+
+- Catalog Server: Accessible on port 3001
+
+- Order Server: Accessible on port 3002
