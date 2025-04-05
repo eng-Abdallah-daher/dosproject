@@ -48,3 +48,16 @@ The system utilizes a client-server model with HTTP REST APIs for communication 
 ```bash
 git clone https://github.com/your-username/bazar-com.git
 cd bazar-com
+```
+###Install Dependencies
+```bash
+cd front-end
+npm install
+
+cd ../catalog-server
+npm install
+
+cd ../order-server
+npm install
+
+```
